@@ -1,4 +1,7 @@
 {
-    "jwtSecret":"secretToken",
-    "mongoURI":"mongodb+srv://meharbanali6325_db_user:devconnector6325@devconnector.mbq2nnv.mongodb.net/?retryWrites=true&w=majority&appName=DevConnector"
+  "jwtSecret": "secretToken",
+  "mongoURI": "mongodb+srv://meharbanali6325_db_user:devconnector6325@devconnector.mbq2nnv.mongodb.net/devconnector?retryWrites=true&w=majority&appName=DevConnector",
+  "githubClientId":"Ov23liP1h1xNZi0bnwrE",
+  "githubSecret":"0d839910a43f492191597490aacea3053f5ebc6d"
+
 }
