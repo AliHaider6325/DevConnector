@@ -1,0 +1,8 @@
+@import "tailwindcss";
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.blue-nav {
+  background-color: #480ca8;
+}
