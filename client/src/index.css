@@ -6,3 +6,31 @@
 .blue-nav {
   background-color: #480ca8;
 }
+
+.alert {
+  @apply relative; /* relative needed for progress bar positioning */
+}
+
+.alert::after {
+  content: "";
+  @apply absolute bottom-0 left-0 h-1 bg-red-600;
+  width: 0%;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.alert-red {
+  @apply z-50 w-[200px] p-4 text-sm text-red-800 bg-red-50 dark:bg-gray-800 dark:text-red-400 fixed top-15 right-0 shadow;
+}
+
+.green-alert {
+  @apply bg-green-500 text-white;
+}

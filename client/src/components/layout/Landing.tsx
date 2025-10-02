@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const landing = () => {
   return (
     <div className="relative w-full h-screen bg-[url('/landingpage_bg.webp')] bg-cover bg-center bg-no-repeat">
@@ -21,10 +22,14 @@ const landing = () => {
           </p>
           <div className=" text-white flex justify-evenly sm:justify-center pt-5">
             <div className="bg-black text-white border border-white p-2 w-18 pt-1 text-md flex-center mx-5">
-              <button className="">Login</button>
+              <Link to="/login">
+                <button className="">Login</button>
+              </Link>
             </div>
             <div className="bg-black text-white border border-white p-2 w-18 pt-1 text-md flex-center">
-              <button>SignUp</button>
+              <Link to="/register">
+                <button>SignUp</button>
+              </Link>
             </div>
           </div>
         </div>

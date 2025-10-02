@@ -6,8 +6,11 @@ import jwt from 'jsonwebtoken'
 // import {jwtSecret} from "../../config/default.json"
 import config from 'config'
 import bcrypt from 'bcryptjs';
+import cors from 'cors';
 
 const router = express.Router();
+router.use(cors());
+
 
 // route:Get api/auth
 //desc:Test route

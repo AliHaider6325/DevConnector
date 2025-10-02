@@ -6,11 +6,13 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken'
 // import {jwtSecret} from "../../config/default.json"
 import config from 'config'
+import cors from 'cors'
 // route:POST api/users
 //desc:Register user
 //access:Public
 
 const router = express.Router();
+router.use(cors());
 router.post('/',[
     check('name','Name is Required').not().isEmpty(),
     check('email','Please include a valid email').isEmail(),
